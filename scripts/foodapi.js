@@ -11,4 +11,7 @@ fetch("http://localhost:8088/food")
     //     console.log(food.name)
     // })
     // console.log(parsedFoods)
-}); 
+})
+const foodListDiv = document.querySelector("div")
+foodListDiv.classList.add("foodList")
+
