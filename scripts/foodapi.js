@@ -15,12 +15,17 @@ console.log("Hi")
 const foodListDiv = document.querySelector("div")
 foodListDiv.classList.add("foodList")
 
+// const articleFlexbox = document.querySelector("article")
+// articleFlexbox.classList.add("foodListFlexbox")
+
 let foodListItems = ""
 const foodFactory = (foodObj) => {
- return foodListItems +=  ` 
-       <h1>Name: ${foodObj.name}</h1>
-        <p>Category: ${foodObj.category}</p>
-        <p>Ethnicity: ${foodObj.ethnicity}</p>
+ return foodListItems +=  `
+        <div>
+            <h3>Name: ${foodObj.name}</h3>
+            <p>Category: ${foodObj.category}</p>
+            <p>Ethnicity: ${foodObj.ethnicity}</p>
+        </div>
     `
   }
 
@@ -38,3 +43,4 @@ const foodFactory = (foodObj) => {
             addFoodToDom(foodAsHTML)
         })
     })
+
