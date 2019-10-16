@@ -12,3 +12,7 @@
 .foodList > div {
     border: 2px dotted navy;
 }
+
+.dishList {
+    background-color: red;
+}

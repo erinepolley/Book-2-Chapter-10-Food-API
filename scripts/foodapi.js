@@ -47,33 +47,31 @@ const foodFactory = (foodObj) => {
 //getting new information using the barcodes and 
 //external API.
 
-const foodIngredientDiv = document.querySelectorAll("div")
-foodIngredientDiv.classList.add("dishList")
+// let foodIngredientDiv = document.querySelectorAll("div")
+// console.log(foodIngredientDiv)
+// for( i = 0; i <foodIngredientDiv.length; i++) {
+//     foodIngredientDiv[i].classList.add("dishList")
+// }
 
-//     let ingredientItems = ""
-// const populateIngredients = (ingred) => {
-//  return ingredientItems +=  `
-//         <div>
-//             <h3>Name: ${foodObj.name}</h3>
-//             <p>Category: ${foodObj.category}</p>
-//             <p>Ethnicity: ${foodObj.ethnicity}</p>
-//         </div>
-//     `
-//   }
 
-//   const addFoodToDom = (foodToAdd) => {
+
+const puttingStuffInDivString = (ingred) => {
+            food[i].ingredients = ingred.product.ingredients_text_en
+  }
+
+//   const addIngredToDom = (foodToAdd) => {
 //         const foodStuff = document.querySelector(".foodList")
-//         foodStuff.innerHTML = foodToAdd
+        // foodStuff.innerHTML = foodToAdd
 //   }
 
-//     fetch("https://world.openfoodfacts.org/api/v0/product/00286565.json")
-//     .then(response => response.json())
-//     .then(productInfo => {
-//         productInfo.forEach(thing =>{
-//             let stuffinDiv = stuff(thing)
-//             addFoodToDom(stuffinDiv)
-//         })
-//     })
+    fetch("https://world.openfoodfacts.org/api/v0/product/00286565.json")
+    .then(response => response.json())
+    .then(productInfo => {
+        productInfo.forEach(thing => {
+         puttingStuffInDivString(thing)
+            // addIngredToDom(stuffinDiv)
+        })
+    })
 
 
 
