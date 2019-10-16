@@ -44,3 +44,10 @@ const foodFactory = (foodObj) => {
         })
     })
 
+    linguine: 00286565
+    curry: 0016229008635
+    green curry: 0016229906191 
+    ravioli: 0719283590596
+    tuscan soup: 0011150479547
+    spaghetti: 0071300055557
+
