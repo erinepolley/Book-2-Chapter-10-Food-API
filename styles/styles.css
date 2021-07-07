@@ -3,8 +3,16 @@
     color: blueviolet;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
-    font-size: .85em
+    font-size: .85em;
+    
 }
 
+.foodList > div {
+    border: 2px dotted navy;
+}
+
+.dishList {
+    background-color: red;
+}
